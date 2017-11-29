@@ -1,6 +1,7 @@
 # Elasticserach Dummy Responder (Success)
 
-=========================================
+[![Build Status](https://travis-ci.org/rimaulana/elasticsearch-dummy-success-responder.svg?branch=master)](https://travis-ci.org/rimaulana/elasticsearch-dummy-success-responder)
+[![Coverage Status](https://coveralls.io/repos/github/rimaulana/elasticsearch-dummy-success-responder/badge.svg?branch=master)](https://coveralls.io/github/rimaulana/elasticsearch-dummy-success-responder?branch=master)
 
 Dummy server to mimic elasticsearch success response upon receiving bulk post requests. I personally use this simple app for testing codes I developed, especially the one that require interaction with elasticsearch server for sending bulk post
 request.
