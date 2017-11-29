@@ -1,0 +1,31 @@
+{
+    "name": "elasticsearch-dummy-success-responder",
+    "version": "0.1.0",
+    "description": "Dummy server to mimic elasticsearch success response upon receiving bulk post requests",
+    "main": "server.js",
+    "scripts": {
+        "build": "node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- --recursive --exit",
+        "server": "node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rimaulana/elasticsearch-dummy-success-responder.git"
+    },
+    "keywords": ["elasticsearch", "dummy", "response", "success", "node", "express", "simulation"],
+    "author": "Rio Maulana <rimaulana@outlook.com> (https://github.com/rimaulana)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/rimaulana/elasticsearch-dummy-success-responder/issues"
+    },
+    "homepage": "https://github.com/rimaulana/elasticsearch-dummy-success-responder#readme",
+    "dependencies": {
+        "express": "^4.16.2"
+    },
+    "devDependencies": {
+        "chai": "^4.1.2",
+        "chai-http": "^3.0.0",
+        "coveralls": "^3.0.0",
+        "istanbul": "^0.4.5",
+        "mocha": "^4.0.1"
+    }
+}
