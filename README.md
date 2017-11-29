@@ -54,7 +54,7 @@ Method should be POST and url will depend on the config. However, the default wo
 
 The acceptable Content-Types header are
 
-* application/json
+* application/x-ndjson
 * text/plain
 
 ![alt text](screenshots/setting_content_type.png "Defining Content-Type header")
@@ -158,16 +158,20 @@ response should look like following
 
 ## Health check
 
-This app has health check utility for making sure that the service is running via GET and POST method on / path. the request send should return
+This app has health check utility for making sure that the service is running via GET method on / path. the request send should return
 
 ```json
 {
-    "process": "Health check",
-    "version": "0.1.0",
-    "ok": true
+    "name": "Dummy ES",
+    "version": {
+        "number": "0.1.0",
+        "build_hash": "m93b675",
+        "build_date": "2017-11-29T06:51:46.989Z",
+        "build_snapshot": true,
+        "lucene_version": "doesn't use lucene"
+    },
+    "tagline": "You Know, only for _bulk"
 }
 ```
 
 ![alt text](screenshots/get_health_check.png "GET health check")
-
-![alt text](screenshots/post_health_check.png "POST health check")
