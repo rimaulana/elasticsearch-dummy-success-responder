@@ -1,14 +1,15 @@
-var express = require("express"),
-    app = express(),
-    bodyParser = require("body-parser"),
-    config = require("./config");
+const express = require('express');
 
-app.use(bodyParser.raw({ type: "application/x-ndjson" }));
-app.use(bodyParser.raw({ type: "text/plain" }));
-app.use(require("./controllers"));
+const app = express();
+const bodyParser = require('body-parser');
+const config = require('./config');
 
-app.listen(config.port, function() {
-    console.log("Running server on port " + config.port);
+app.use(bodyParser.raw({ type: 'application/x-ndjson' }));
+app.use(bodyParser.raw({ type: 'text/plain' }));
+app.use(require('./controllers'));
+
+app.listen(config.port, () => {
+  console.log(`Running server on port ${config.port}`);
 });
 
 module.exports = app;

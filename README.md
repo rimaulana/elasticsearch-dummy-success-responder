@@ -1,7 +1,6 @@
 # Elasticserach Dummy Responder (Success)
 
-[![Build Status](https://travis-ci.org/rimaulana/elasticsearch-dummy-success-responder.svg?branch=master)](https://travis-ci.org/rimaulana/elasticsearch-dummy-success-responder)
-[![Coverage Status](https://coveralls.io/repos/github/rimaulana/elasticsearch-dummy-success-responder/badge.svg?branch=master)](https://coveralls.io/github/rimaulana/elasticsearch-dummy-success-responder?branch=master)
+[![CircleCI](https://img.shields.io/circleci/project/github/rimaulana/elasticsearch-dummy-success-responder.svg)](https://circleci.com/gh/rimaulana/elasticsearch-dummy-success-responder/tree/master) [![codecov](https://codecov.io/gh/rimaulana/elasticsearch-dummy-success-responder/branch/master/graph/badge.svg)](https://codecov.io/gh/rimaulana/elasticsearch-dummy-success-responder) [![codebeat badge](https://codebeat.co/badges/434c4290-8ef7-4196-9b75-5374f03c23d5)](https://codebeat.co/projects/github-com-rimaulana-elasticsearch-dummy-success-responder-master) [![Maintainability](https://api.codeclimate.com/v1/badges/e84a019853c23b383475/maintainability)](https://codeclimate.com/github/rimaulana/elasticsearch-dummy-success-responder/maintainability) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 Dummy server to mimic elasticsearch success response upon receiving bulk post requests. I personally use this simple app for testing codes I developed, especially the one that require interaction with elasticsearch server for sending bulk post
 request.
