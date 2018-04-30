@@ -1,6 +1,6 @@
 {
     "name": "elasticsearch-dummy-success-responder",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "description": "Dummy server to mimic elasticsearch success response upon receiving bulk post requests",
     "main": "server.js",
     "nyc": {
