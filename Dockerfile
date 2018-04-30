@@ -1,6 +1,6 @@
 FROM node:alpine
 WORKDIR /usr/local/data
 COPY . .
-RUN npm install
-EXPOSE 9200
+RUN npm install --only=prod
+EXPOSE 3000
 CMD ["npm","run","server"]
