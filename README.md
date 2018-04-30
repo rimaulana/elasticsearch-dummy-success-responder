@@ -5,6 +5,10 @@
 Dummy server to mimic elasticsearch success response upon receiving bulk post requests. I personally use this simple app for testing codes I developed, especially the one that require interaction with elasticsearch server for sending bulk post
 request.
 
+## Limitation
+* Currently doesn't support HTTPS
+* Only accept _bulk operation
+
 ## Installation
 
 To install this application, the following requirements needs to be met
@@ -38,6 +42,20 @@ by default this application will listen to port 3000. However, it can simply be 
 {
     "port": 3000
 }
+```
+
+## Running on Docker
+
+You can build this application into docker by running the following command
+
+```bash
+docker build -t rimaulana/fake-es .
+```
+
+and you can simply run the container by executing
+
+```bash
+docker run -d -p 3000:3000 rimaulana/fake-es
 ```
 
 ## Testing with postman
@@ -175,3 +193,4 @@ This app has health check utility for making sure that the service is running vi
 ```
 
 ![alt text](screenshots/get_health_check.png "GET health check")
+
